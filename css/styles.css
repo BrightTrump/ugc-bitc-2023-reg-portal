@@ -1,0 +1,422 @@
+:root {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+  --primary-color: rgb(9, 9, 161);
+  --secondary-color: rgb(216, 39, 39);
+  --tertiary-color: rgb(2, 2, 20);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.reg-section {
+  display: -moz-flexbox;
+  display: 0-flexbox;
+  display: flex;
+  -ms-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  margin: 2.5em 0 5em 0;
+}
+.reg-section .container {
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, rgb(4, 4, 41), black);
+  border: 1px solid white;
+  padding: 2em 0 2em 1em;
+  color: white;
+  width: 45vw;
+  height: 100%;
+}
+.reg-section .container .logo {
+  width: 20vw;
+  height: 40vh;
+  border-radius: 1em;
+  margin: 0.3em 0 3em 9em;
+}
+.reg-section .container .desc-1 {
+  text-align: center;
+  color: yellow;
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 0.6em;
+}
+.reg-section .container .desc-2 {
+  text-align: center;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  max-width: 600px;
+  padding-bottom: 0.6em;
+}
+.reg-section .container .reg-h3 {
+  color: var(--secondary-color);
+  font-size: 1.4em;
+  padding: 1em 0 0.5em 0;
+}
+.reg-section .container .fill-form {
+  color: white;
+  font-size: 1em;
+  padding-bottom: 1.5em;
+}
+.reg-section .container .reg-page-form {
+  padding-bottom: 2em;
+}
+.reg-section .container .reg-page-form .form-item {
+  position: relative;
+}
+.reg-section .container .reg-page-form .form-item .text {
+  border-radius: 0.5em;
+  padding: 1em 0 1em 2.8em;
+  width: 90%;
+}
+.reg-section .container .reg-page-form .form-item .bx {
+  font-size: 2em;
+  position: absolute;
+  color: var(--tertiary-color);
+  z-index: 1;
+  left: 0;
+  top: 1.4em;
+}
+.reg-section .container .note-desc {
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.5em;
+  color: var(--secondary-color);
+  padding-bottom: 2em;
+}
+.reg-section .container .note-desc span {
+  color: yellow;
+}
+.reg-section .container .check {
+  line-height: 1.5em;
+  padding-bottom: 1em;
+}
+.reg-section .container .check .agree {
+  font-size: 1.2em;
+}
+.reg-section .container .submit-cta {
+  background-color: var(--secondary-color);
+  padding: 0.8em 1.3em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: white;
+}
+.reg-section .container .submit-cta:hover {
+  background-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 992px) {
+  .reg-section {
+    display: -moz-flexbox;
+    display: 0-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    margin: 2.5em 0 5em 0;
+  }
+  .reg-section .container {
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgb(4, 4, 41), black);
+    border: 1px solid white;
+    padding: 2em 0 2em 1em;
+    color: white;
+    width: 75vw;
+    height: 100%;
+  }
+  .reg-section .container .logo {
+    width: 40vw;
+    height: 35vh;
+    border-radius: 1em;
+    margin: 0.3em 0 3em 9em;
+  }
+  .reg-section .container .desc-1 {
+    text-align: center;
+    color: yellow;
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 0.6em;
+  }
+  .reg-section .container .desc-2 {
+    text-align: center;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    max-width: 600px;
+    padding-bottom: 0.6em;
+  }
+  .reg-section .container .reg-h3 {
+    color: var(--secondary-color);
+    font-size: 1.4em;
+    padding: 1em 0 0.5em 0;
+  }
+  .reg-section .container .fill-form {
+    color: white;
+    font-size: 1em;
+    padding-bottom: 1.5em;
+  }
+  .reg-section .container .reg-page-form {
+    padding-bottom: 2em;
+  }
+  .reg-section .container .reg-page-form .form-item {
+    position: relative;
+  }
+  .reg-section .container .reg-page-form .form-item .text {
+    border-radius: 0.5em;
+    padding: 1em 0 1em 2.8em;
+    width: 90%;
+  }
+  .reg-section .container .reg-page-form .form-item .bx {
+    font-size: 2em;
+    position: absolute;
+    color: var(--tertiary-color);
+    z-index: 1;
+    left: 0;
+    top: 1.4em;
+  }
+  .reg-section .container .note-desc {
+    font-size: 1em;
+    font-style: italic;
+    line-height: 1.5em;
+    color: var(--secondary-color);
+    padding-bottom: 2em;
+  }
+  .reg-section .container .note-desc span {
+    color: yellow;
+  }
+  .reg-section .container .check {
+    line-height: 1.5em;
+    padding-bottom: 1em;
+  }
+  .reg-section .container .check .agree {
+    font-size: 1.2em;
+  }
+  .reg-section .container .submit-cta {
+    background-color: var(--secondary-color);
+    padding: 0.8em 1.3em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: white;
+  }
+  .reg-section .container .submit-cta:hover {
+    background-color: var(--primary-color);
+  }
+}
+@media only screen and (max-width: 772px) {
+  .reg-section {
+    display: -moz-flexbox;
+    display: 0-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    margin: 2.5em 0 5em 0;
+  }
+  .reg-section .container {
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgb(4, 4, 41), black);
+    border: 1px solid white;
+    padding: 2em 0 2em 1em;
+    color: white;
+    width: 75vw;
+    height: 100%;
+  }
+  .reg-section .container .logo {
+    width: 40vw;
+    height: 35vh;
+    border-radius: 1em;
+    margin: 0.3em 0 3em 8em;
+  }
+  .reg-section .container .desc-1 {
+    text-align: center;
+    color: yellow;
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 0.6em;
+  }
+  .reg-section .container .desc-2 {
+    text-align: center;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    max-width: 600px;
+    padding-bottom: 0.6em;
+  }
+  .reg-section .container .reg-h3 {
+    color: var(--secondary-color);
+    font-size: 1.4em;
+    padding: 1em 0 0.5em 0;
+  }
+  .reg-section .container .fill-form {
+    color: white;
+    font-size: 1em;
+    padding-bottom: 1.5em;
+  }
+  .reg-section .container .reg-page-form {
+    padding-bottom: 2em;
+  }
+  .reg-section .container .reg-page-form .form-item {
+    position: relative;
+  }
+  .reg-section .container .reg-page-form .form-item .text {
+    border-radius: 0.5em;
+    padding: 1em 0 1em 2.8em;
+    width: 90%;
+  }
+  .reg-section .container .reg-page-form .form-item .bx {
+    font-size: 2em;
+    position: absolute;
+    color: var(--tertiary-color);
+    z-index: 1;
+    left: 0;
+    top: 1.4em;
+  }
+  .reg-section .container .note-desc {
+    font-size: 1em;
+    font-style: italic;
+    line-height: 1.5em;
+    color: var(--secondary-color);
+    padding-bottom: 2em;
+  }
+  .reg-section .container .note-desc span {
+    color: yellow;
+  }
+  .reg-section .container .check {
+    line-height: 1.5em;
+    padding-bottom: 1em;
+  }
+  .reg-section .container .check .agree {
+    font-size: 1.2em;
+  }
+  .reg-section .container .submit-cta {
+    background-color: var(--secondary-color);
+    padding: 0.8em 1.3em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: white;
+  }
+  .reg-section .container .submit-cta:hover {
+    background-color: var(--primary-color);
+  }
+}
+@media only screen and (max-width: 450px) {
+  .reg-section {
+    display: -moz-flexbox;
+    display: 0-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    margin: 2.5em 0 5em 0;
+  }
+  .reg-section .container {
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgb(4, 4, 41), black);
+    border: 1px solid white;
+    padding: 2em 0 2em 1em;
+    color: white;
+    width: 90vw;
+    height: 100%;
+  }
+  .reg-section .container .logo {
+    width: 70vw;
+    height: 35vh;
+    border-radius: 1em;
+    margin: 0.3em 0 3em 1.5em;
+  }
+  .reg-section .container .desc-1 {
+    text-align: center;
+    color: yellow;
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 0.6em;
+  }
+  .reg-section .container .desc-2 {
+    line-height: 1.2em;
+    text-align: center;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    max-width: 600px;
+    padding-bottom: 0.6em;
+  }
+  .reg-section .container .reg-h3 {
+    color: var(--secondary-color);
+    font-size: 1.4em;
+    padding: 1em 0 0.5em 0;
+  }
+  .reg-section .container .fill-form {
+    color: white;
+    font-size: 1em;
+    padding-bottom: 1.5em;
+  }
+  .reg-section .container .reg-page-form {
+    padding-bottom: 2em;
+  }
+  .reg-section .container .reg-page-form .form-item {
+    position: relative;
+  }
+  .reg-section .container .reg-page-form .form-item .text {
+    border-radius: 0.5em;
+    padding: 1em 0 1em 2.8em;
+    width: 90%;
+  }
+  .reg-section .container .reg-page-form .form-item .bx {
+    font-size: 2em;
+    position: absolute;
+    color: var(--tertiary-color);
+    z-index: 1;
+    left: 0;
+    top: 1.4em;
+  }
+  .reg-section .container .note-desc {
+    font-size: 1em;
+    font-style: italic;
+    line-height: 1.5em;
+    color: var(--secondary-color);
+    padding-bottom: 2em;
+  }
+  .reg-section .container .note-desc span {
+    color: yellow;
+  }
+  .reg-section .container .check {
+    line-height: 1.5em;
+    padding-bottom: 1em;
+  }
+  .reg-section .container .check .agree {
+    font-size: 1.2em;
+  }
+  .reg-section .container .submit-cta {
+    background-color: var(--secondary-color);
+    padding: 0.8em 1.3em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: white;
+  }
+  .reg-section .container .submit-cta:hover {
+    background-color: var(--primary-color);
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/765557ebc1.js"
+      crossorigin="anonymous"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Registartion Page</title>
+  </head>
+  <body style="background-color: rgb(37, 35, 35)">
+    <section class="reg-section">
+      <div class="container">
+        <div class="img-content">
+          <img src="/images/bb.png" alt="BB Logo" class="logo" />
+        </div>
+        <p class="desc-1">The Boys' Brigade Nigeria</p>
+        <p class="desc-2">
+          Uvwie Group Council, Integrated Training Course (Sun 17th - Fri 22nd
+          Dec, 2023)
+        </p>
+        <h3 class="reg-h3">Registration Page</h3>
+        <p class="fill-form"></p>
+        <form action="" class="reg-page-form">
+          <div class="form-item">
+            <label for="fullname">
+              Fullname (The way it should appear on your certificate)</label
+            ><br /><br />
+            <i class="bx bx-male-female"></i>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              class="text"
+              placeholder="Fullname"
+              autocomplete="on" />
+          </div>
+          <br />
+          <div class="form-item">
+            <label for="tel">Phone</label><br /><br />
+            <i class="bx bxs-phone-call"></i>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              placeholder="Your Number"
+              class="text" />
+            <br /><br />
+          </div>
+          <div class="form-item">
+            <label for="email">Email Address</label> <br /><br />
+            <i class="bx bx-envelope"></i>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="text"
+              placeholder="Enter email"
+              autocomplete="on" />
+          </div>
+          <br /><br />
+          <div class="form-item">
+            <label for="state-council">State Council</label> <br /><br />
+            <i class="bx bx-male-female"></i>
+            <input
+              type="text"
+              id="state-council"
+              name="state-council"
+              class="text"
+              placeholder="State Council"
+              autocomplete="on" />
+          </div>
+          <br /><br />
+          <div class="form-item">
+            <label for="battalion-council">Battalion/Group Council</label>
+            <br /><br />
+            <i class="bx bx-male-female"></i>
+            <input
+              type="text"
+              id="battalion-council"
+              name="battalion-council"
+              class="text"
+              placeholder="Battalion Council"
+              autocomplete="on" />
+          </div>
+          <br /><br />
+          <div class="form-item">
+            <label for="company">Company</label> <br /><br />
+            <i class="bx bxs-building-house"></i>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              class="text"
+              placeholder="Company"
+              autocomplete="on" />
+          </div>
+          <br /><br />
+          <div class="form-item">
+            <label for="status">Rank</label><br /><br />
+            <i class="bx bx-chevrons-down"></i>
+            <select id="marital-status" name="marital-status" class="text">
+              <option value="private">Private</option>
+              <option value="Lance-coporal">Lance Coporal</option>
+              <option value="sergeant">Sergeant</option>
+              <option value="staff-sergeant">Staff Sergeant</option>
+              <option value="warrant-Officer">Warrant Officer</option>
+              <option value="lietenant">Lietenant</option>
+              <option value="captain">Captain</option>
+              <option value="Patron">Patron/Patroness</option>
+              <option value="chaplain">Chaplain</option>
+            </select>
+          </div>
+          <br /><br />
+          <div class="form-item">
+            <label for="birthday">D.O.B</label> <br /><br />
+            <i class="bx bxs-calendar"></i>
+            <input type="date" id="birthday" name="birthday" class="text" />
+          </div>
+          <br /><br />
+          <div class="form-item">
+            <label for="status">Marital Status</label><br /><br />
+            <i class="bx bx-male-female"></i>
+            <select id="marital-status" name="marital-status" class="text">
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+              <option value="widow">Widow</option>
+              <option value="divorced">Divorced</option>
+            </select>
+          </div>
+          <br /><br />
+          <div class="form-item">
+            <label for="gender">Gender</label><br /><br />
+            <i class="bx bx-male-female"></i>
+            <select id="gender" name="gender" class="text">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <br /><br />
+          <div class="form-item">
+            <label for="account">Which Course are you registering for ?</label
+            ><br /><br />
+            <i class="bx bxs-certification"></i>
+            <select
+              id="course-type"
+              name="course-type"
+              class="text course-choice">
+              <option value="basic" class="course-option">NCO Basic</option>
+              <option value="basic" class="course-option">NCO Advance</option>
+              <option value="basic" class="course-option">
+                Officers Basic 1 (One)
+              </option>
+              <option value="basic" class="course-option">
+                Officers Basic 2 (Two)
+              </option>
+              <option value="basic" class="course-option">
+                Officers Basic 3 (Three)
+              </option>
+            </select>
+          </div>
+          <br /><br />
+          <div class="form-item">
+            <label for="myfile">Upload Proof of Payment</label>
+            <input type="file" id="myfile" name="myfile" class="text" />
+          </div>
+          <br />
+
+          <p class="note-desc">
+            <span>Note:</span> Please endeavor to come along with evidence of
+            payment because it will also be a prerequisite for camp entry.
+          </p>
+          <div class="check">
+            <input
+              type="checkbox"
+              id="agree"
+              name="agree"
+              value="checkbox"
+              class="checkbox" />
+            <label for="agree"
+              >I agree to the Privacy Policy and Terms of Use, and want to
+              receive news.</label
+            ><br />
+          </div>
+        </form>
+        <a href="" class="submit-cta">Submit</a>
+      </div>
+    </section>
+  </body>
+</html>
