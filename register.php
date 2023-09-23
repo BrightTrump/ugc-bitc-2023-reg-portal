@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli("localhost", "root", "", "bright");
+$conn = new mysqli("localhost", "id21303150_2023ugcitc", "Trump1234@", "id21303150_brighttrump");
 if(!$conn){
     die("Could not connect to db". mysqli_connect_error());
 }
