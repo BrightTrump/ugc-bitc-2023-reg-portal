@@ -8,13 +8,17 @@
 * {
   margin: 0;
   padding: 0;
+  --webkit-box-sizing: border-box;
+  --ms-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  --o-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
 .reg-section {
   display: -moz-flexbox;
-  display: 0-flexbox;
+  display: -o-flexbox;
   display: flex;
   -ms-align-items: center;
   -moz-align-items: center;

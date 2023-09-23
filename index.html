@@ -11,9 +11,9 @@
       rel="stylesheet" />
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Registartion Form</title>
+    <title>2023 UGC BITC Registartion Form</title>
   </head>
-  <body style="background-color: rgb(37, 35, 35)">
+  <body style="/*background-color: rgb(37, 35, 35)*/">
     <section class="reg-section">
       <div class="container">
         <div class="img-content">
@@ -26,7 +26,11 @@
         </p>
         <h3 class="reg-h3">Registration Form</h3>
         <p class="fill-form"></p>
-        <form action="" class="reg-page-form">
+        <form
+          action="register.php"
+          method="post"
+          class="reg-page-form"
+          enctype="multipart/form-data">
           <div class="form-item">
             <label for="fullname">
               Fullname (The way it should appear on your certificate)</label
@@ -38,18 +42,20 @@
               name="fullname"
               class="text"
               placeholder="Fullname"
-              autocomplete="on" />
+              autocomplete="on"
+              required />
           </div>
           <br />
           <div class="form-item">
-            <label for="tel">Phone</label><br /><br />
+            <label for="tel">Phone Number</label><br /><br />
             <i class="bx bxs-phone-call"></i>
             <input
               type="tel"
               id="tel"
               name="tel"
               placeholder="Your Number"
-              class="text" />
+              class="text"
+              required />
             <br /><br />
           </div>
           <div class="form-item">
@@ -61,7 +67,8 @@
               name="email"
               class="text"
               placeholder="Enter email"
-              autocomplete="on" />
+              autocomplete="on"
+              required />
           </div>
           <br /><br />
           <div class="form-item">
@@ -70,10 +77,11 @@
             <input
               type="text"
               id="state-council"
-              name="state-council"
+              name="state_council"
               class="text"
               placeholder="State Council"
-              autocomplete="on" />
+              autocomplete="on"
+              required />
           </div>
           <br /><br />
           <div class="form-item">
@@ -83,10 +91,11 @@
             <input
               type="text"
               id="battalion-council"
-              name="battalion-council"
+              name="battalion_council"
               class="text"
               placeholder="Battalion Council"
-              autocomplete="on" />
+              autocomplete="on"
+              required />
           </div>
           <br /><br />
           <div class="form-item">
@@ -98,15 +107,17 @@
               name="company"
               class="text"
               placeholder="Company"
-              autocomplete="on" />
+              autocomplete="on"
+              required />
           </div>
-          <br /><br />https://tinyurl.com/2p9x5prc
+          <br /><br />
           <div class="form-item">
             <label for="status">Rank</label><br /><br />
             <i class="bx bx-chevrons-down"></i>
-            <select id="marital-status" name="marital-status" class="text">
+            <select id="rank" name="rank" class="text" required>
               <option value="private">Private</option>
               <option value="Lance-coporal">Lance Coporal</option>
+              <option value="coporal">Coporal</option>
               <option value="sergeant">Sergeant</option>
               <option value="staff-sergeant">Staff Sergeant</option>
               <option value="warrant-Officer">Warrant Officer</option>
@@ -120,13 +131,22 @@
           <div class="form-item">
             <label for="birthday">D.O.B</label> <br /><br />
             <i class="bx bxs-calendar"></i>
-            <input type="date" id="birthday" name="birthday" class="text" />
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
+              class="text"
+              required />
           </div>
           <br /><br />
           <div class="form-item">
             <label for="status">Marital Status</label><br /><br />
             <i class="bx bx-male-female"></i>
-            <select id="marital-status" name="marital-status" class="text">
+            <select
+              id="marital-status"
+              name="marital_status"
+              class="text"
+              required>
               <option value="single">Single</option>
               <option value="married">Married</option>
               <option value="widow">Widow</option>
@@ -137,7 +157,7 @@
           <div class="form-item">
             <label for="gender">Gender</label><br /><br />
             <i class="bx bx-male-female"></i>
-            <select id="gender" name="gender" class="text">
+            <select id="gender" name="gender" class="text" required>
               <option value="male">Male</option>
               <option value="female">Female</option>
             </select>
@@ -149,8 +169,9 @@
             <i class="bx bxs-certification"></i>
             <select
               id="course-type"
-              name="course-type"
-              class="text course-choice">
+              name="course_type"
+              class="text course-choice"
+              required>
               <option value="basic" class="course-option">NCO Basic</option>
               <option value="basic" class="course-option">NCO Advance</option>
               <option value="basic" class="course-option">
@@ -167,7 +188,12 @@
           <br /><br />
           <div class="form-item">
             <label for="myfile">Upload Proof of Payment</label>
-            <input type="file" id="myfile" name="myfile" class="text" />
+            <input
+              type="file"
+              id="myfile"
+              name="myfile"
+              class="text"
+              required />
           </div>
           <br />
 
@@ -181,14 +207,22 @@
               id="agree"
               name="agree"
               value="checkbox"
-              class="checkbox" />
+              class="checkbox"
+              required />
             <label for="agree"
               >I agree to the Privacy Policy and Terms of Use, and want to
               receive news.</label
             ><br />
           </div>
+          <div>
+            <input
+              type="submit"
+              value="Submit"
+              name="submit"
+              class="submit-cta" />
+          </div>
         </form>
-        <a href="" class="submit-cta">Submit</a>
+        <!-- <a href="" class="submit-cta">Submit</a> -->
       </div>
     </section>
   </body>
